@@ -1,0 +1,11 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@khayitbek:Khayitbek03/Portfolio.git",
+  "author": "Khayitbek03 <xayitbekmirsoatov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
