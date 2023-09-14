@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+input {
+  display: none;
+}
+body {
+  background-color: cornflowerblue;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0, 0.625rem;
+}
+img {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.img2 {
+  width: 50rem;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50rem;
+  overflow: hidden;
+  gap: 1rem;
+}
+.slides {
+  height: 40rem;
+  display: flex;
+  flex-basis: 100%;
+}
+.texts {
+  display: flex;
+  flex-basis: 50%;
+  color: bisque;
+  transition: all 0.5s ease;
+  font-size: 0;
+}
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.625rem;
+  flex-basis: 45%;
+}
+.label {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: azure;
+  border: 0.125rem solid saddlebrown;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.label:hover {
+  background-color: saddlebrown;
+}
+#slide1:checked ~ .texts .text1,
+#slide2:checked ~ .texts .text2,
+#slide3:checked ~ .texts .text3,
+#slide4:checked ~ .texts .text4 {
+  font-size: 1.25rem;
+}
+#slide1:checked ~ * label:nth-child(1),
+#slide2:checked ~ * label:nth-child(2),
+#slide3:checked ~ * label:nth-child(3),
+#slide4:checked ~ * label:nth-child(4) {
+  background-color: saddlebrown;
+}
+#slide1:checked ~ .slides img:nth-child(1) {
+  margin-left: 0;
+}
+#slide2:checked ~ * .img2 {
+  margin-left: -100%;
+}
+#slide3:checked ~ * .img3 {
+  margin-left: -200%;
+}
+#slide4:checked ~ * .img4 {
+  margin-left: -300%;
+}
