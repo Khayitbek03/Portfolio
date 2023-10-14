@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="./svg/icons8-airpods-pro-max-48.png">
+    <link rel="stylesheet" href="resset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>AudioPlayer</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div id="image_albom" class="photo photo_one"></div>
+            <div class="controls">
+                <div class="controls_top">
+                    <div class="play" onclick="control()"></div>
+                    <div class="song">
+                        <div id="author">Beyonce</div>
+                        <div id="title">Don't Hurt Yourself</div>
+                    </div>
+                    <div class="arrows">
+                        <div id="right" onclick="next()">
+                            <img src="./svg/forward.png" alt="right">
+                        </div>
+                        <div id="left" onclick="before()">
+                            <img src="./svg/backward.png" alt="left">
+                        </div>
+                    </div>
+                </div>
+                <div class="audio">
+                    <div id="start_song">0:00</div>
+                    <input type="range" value="0" min="0" max="1000" step="1" id="progress" oninput="otherTime()">
+                    <div id="end_song">3:53</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="github">
+            <a href="https://github.com/Khayitbek03">
+                <div class="image_github"></div>
+            </a>
+        </div>
+        <div class="year_created"> 2023 by Khayitbek Mirsoatov </div>
+        <div class="course">
+            <a href="https://rs.school/js/">
+                <img src="./svg/rs_school_js.svg" alt="rsschool">
+            </a>
+        </div>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>

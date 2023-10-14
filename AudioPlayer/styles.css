@@ -1,0 +1,142 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background: url(./img/lemonade.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  backdrop-filter: blur(10px);
+}
+main {
+  width: 330px;
+  height: 400px;
+  box-shadow: 0 0 10px #000000;
+  border-radius: 3%;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+.controls {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 30%;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(40, 40, 40),
+    rgb(133, 133, 133)
+  );
+  padding: 15px 30px 5px;
+}
+.controls_top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.play {
+  width: 50px;
+  height: 50px;
+  background-image: url("./svg/play.png");
+  background-position: center center;
+  background-size: 100% 100%;
+  filter: invert(1);
+  cursor: pointer;
+  transition: 1s ease;
+}
+.play.stop {
+  background-image: url("./svg/pause.png");
+  transition: 1s ease;
+}
+.arrows {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.arrows div {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.arrows img {
+  width: 100%;
+  height: 100%;
+  filter: invert(1);
+}
+.audio {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column-reverse;
+  color: white;
+  font-size: 13px;
+  gap: 2px;
+}
+.photo {
+  height: 70%;
+}
+.photo_one {
+  background-image: url(./img/lemonade.png);
+  background-position: center center;
+  transition: 1s ease;
+}
+.photo_one.scale {
+  transform: scale(0.95);
+  transition: 1s ease;
+}
+.song {
+  color: white;
+  font-size: 20px;
+}
+.song #author {
+  color: rgb(193, 255, 6);
+}
+.audio #end_song {
+  align-self: end;
+  color: rgb(193, 255, 6);
+}
+input::-webkit-slider-thumb {
+  background-color: rgb(193, 255, 6);
+  appearance: none;
+  width: 8px;
+  height: 12px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#progress {
+  appearance: none;
+  background-color: black;
+  width: 100%;
+  height: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  color: white;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.github,
+.course {
+  width: 5rem;
+}
+.image_github {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(./svg/icons8-github.svg);
+  background-size: 100% 100%;
+  filter: invert(1);
+}
+.course {
+  filter: invert(1);
+}
