@@ -6,4 +6,4 @@
 ## 2. Audio-Player
 - Introduction: music audio-player with the functionality
 - Technologies Used:HTML,CSS,JS,GIT,GITHub
-- [Deploy](https://khayitbek03.github.io/Portfolio/AudioPLayer/index.html)
+- [Deploy](https://khayitbek03.github.io/Portfolio/AudioPLayer/)
